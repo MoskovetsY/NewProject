@@ -1,0 +1,21 @@
+@import "_header";
+@import "_home";
+@import "_clearfix";
+@import "_about";
+@font-face {
+   font-family: Ubuntu;
+   src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+   }
+@font-face {
+   font-family: Poiret One;
+   src: url(../fonts/Poiret_One/PoiretOne-Regular.ttf);
+   }
+
+
+*{
+   box-sizing: border-box;
+}
+
+.wrap{
+   min-width: 1366px;
+}

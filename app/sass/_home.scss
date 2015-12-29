@@ -1,0 +1,41 @@
+.home{
+   height: 100vh;
+   background: url(../img/hero.png) no-repeat 100% bottom;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.home-container{
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   width: 900px;
+   height: 100vh;
+   margin: 0 auto;
+   .home-container_title{
+      margin: auto;
+      text-align: center;
+      color: $main-color;
+   }
+}
+
+.title-main{
+   margin: 0 0 20px 0;
+   padding: 15px;
+   text-transform: uppercase;
+   border: 7px solid $main-color;
+   border-radius: 5px;
+   font-size: 40px;
+   font-family: 'Poiret One', cursive;
+   letter-spacing: 3px;
+   text-shadow: 1px 1px 5px black, 0 0 1em $second-color;
+}
+
+.title-second{
+   margin: 0;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 300;
+   font-size: 20px;
+   letter-spacing: 3px;
+}

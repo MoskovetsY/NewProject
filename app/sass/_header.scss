@@ -1,0 +1,115 @@
+$main-color: #FFF;
+$second-color: #FF6347;
+
+
+
+
+.head{
+   min-width: 100%;
+   height: 80px;
+   margin-bottom: -80px;
+   padding-top: 30px;
+   // opacity: 0;
+}
+
+.head-container{
+   width: 900px;
+   height: 80px;
+   margin: 0 auto;
+}
+
+.head-container_logo-box{
+   float: left;
+   .logo{
+      width: 50px;
+      height: 50px;
+      fill: $main-color;
+      -webkit-transition: 1.5s;
+      transition: 1.5s;
+      &:hover{
+         -webkit-transform: rotate(300deg);
+                 transform: rotate(300deg);
+         fill: $second-color;
+      }
+   }
+}
+
+.head-container_nav{
+   float: right;
+   padding: 0;
+   list-style: none;
+   .nav-item{
+      display: inline-block;
+      margin-left: 20px;
+      &:first-child{
+         margin-left: 0;
+      }
+   }
+   .nav-item-link{
+      display: block;
+      padding-bottom: 3px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $main-color;
+      -webkit-transition: 0.7s;
+      transition: 0.7s;
+      font-family: 'Ubuntu', sans-serif;
+      &:hover{
+         color: $second-color;
+                 -webkit-transform: rotateZ(360deg);
+                         transform: rotateZ(360deg);
+      }
+   }
+}
+
+.headhesive{
+   position: fixed;
+   width: 100%;
+   margin: 0 auto;
+   -webkit-transform: translateY(-100%);
+           transform: translateY(-100%);
+   -webkit-transition: 0.5s;
+   transition: 0.5s;
+   opacity: 0;
+}
+
+.headhesive--stick{
+   height: 40px;
+   padding: 0;
+   background-color: rgba(0, 0, 0, 0.77);
+   vertical-align: middle;
+   -webkit-transform: translateY(0);
+           transform: translateY(0);
+   opacity: 1;
+   .logo{
+      width: 30px;
+      height: 30px;
+      margin-top: 5px;
+      fill: $main-color;
+      -webkit-transition: 1s;
+      transition: 1s;
+      &:hover{
+         -webkit-transform: none;
+                 transform: none;
+         fill: $second-color;
+      }
+   }
+   .head-container_nav{
+      margin: 11px 0 0 0;
+   }
+   .nav-item-link{
+      display: block;
+      padding: 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $main-color;
+      -webkit-transition: 1s;
+      transition: 1s;
+      &:hover{
+         color: $second-color;
+         border: none;
+         -webkit-transform: none;
+                 transform: none;
+      }
+   }
+}
