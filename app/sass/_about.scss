@@ -1,5 +1,6 @@
 .about-me{
    height: 100vh;
+  padding-top: 40px;
    background-color: #FAF6EC;
 }
 
@@ -7,4 +8,76 @@
    width: 900px;
    height: 100vh;
    margin: 0 auto;
+}
+
+.about-me-container_title{
+  font-family: 'Lobster', cursive;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-me-container_title-text{
+  text-align: center;
+  font-size: 19px;
+}
+
+.items-right-skills-title,
+.items-left-education-title,
+.items-left-hobby-title,
+.items-left-link-title{
+  text-align: center;
+}
+
+.education-list-item-where{
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.hobby{
+  text-align: center;
+  >.fa{
+    margin-left: 10px;
+    &:first-child{
+      margin-left: 0px;
+    }
+  }
+}
+
+.items-left-link-content{
+  text-align: center;
+  .items-left-link-contentLink{
+    margin-left: 10px;
+    color: #333333;
+    transition: 0.5s;
+    &:first-child{
+      margin-left: 0px;
+    }
+    &:hover{
+      color: $second-color;
+    }
+  }
+}
+
+
+
+.about-me-container_items-center-avatar{
+  margin-top: 50%;
+}
+
+.avatar-wrap{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid $second-color;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+.avatar{
+  width: 200px;
+  height: 200px;
 }
